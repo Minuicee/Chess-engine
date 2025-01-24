@@ -1,4 +1,9 @@
 
+# AI specs
+
+    -uses multithreading
+    -uses a database (pgn format)
+
 # Important notes
 
     -you can only promote to a queen
