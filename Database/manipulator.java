@@ -179,7 +179,7 @@ public class manipulator{
         catch (Exception e) {
             System.out.println("Error connecting to database");
         }
-
+        System.out.println("mostplayedmove "+mostPlayedMove);
         return mostPlayedMove;
     }
 
