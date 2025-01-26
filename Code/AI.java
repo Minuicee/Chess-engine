@@ -51,9 +51,11 @@ public class AI{
         long thinkingTime = java.time.Duration.between(thinkingStartingTime, LocalDateTime.now()).toMillis();
 
         //if it was very quick, try again with more depth
-        if(thinkingTime < 100) bestMove = getBestMove(depth+2);
-        else if(thinkingTime < 600) bestMove = getBestMove(depth+1);
-        else if(thinkingTime < 3000) bestMove = getBestMove(depth);
+        if(Main.game.gameHistory.size() > 4){ //dont do that if its probably a database move
+            if(thinkingTime < 100) bestMove = getBestMove(depth+2);
+            else if(thinkingTime < 600) bestMove = getBestMove(depth+1);
+            else if(thinkingTime < 3000) bestMove = getBestMove(depth);
+        }
 
         //update thinking time
         thinkingTime = java.time.Duration.between(thinkingStartingTime, LocalDateTime.now()).toMillis();
