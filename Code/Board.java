@@ -70,13 +70,13 @@ public class Board extends JFrame implements MouseListener{
         } squarePanel.addMouseListener(this);
 
         //control panel
-        testDisplay1.setPreferredSize(new Dimension(frame_width-chess_board_size-200, 50));
-        testDisplay1.setOpaque(true);
-        testDisplay1.setBackground(Color.white);
-        // restartButton.setPreferredSize(new Dimension(frame_width-chess_board_size-250, 40));
-        // restartButton.addActionListener(e -> {Main.game.resetGame(Main.game);});
-        // restartButton.setBackground(Color.decode("#dd9dff"));
-        // restartButton.setFocusable(false);
+        //testDisplay1.setPreferredSize(new Dimension(frame_width-chess_board_size-200, 50));
+        //testDisplay1.setOpaque(true);
+        //testDisplay1.setBackground(Color.white);
+        restartButton.setPreferredSize(new Dimension(frame_width-chess_board_size-250, 40));
+        restartButton.addActionListener(e -> {Main.game.resetGame(Main.game);});
+        restartButton.setBackground(Color.decode("#dd9dff"));
+        restartButton.setFocusable(false);
         controlPanel.setOpaque(true);
         controlPanel.setBackground(Color.decode("#2d2630"));
         // controlPanel.add(testDisplay1);
