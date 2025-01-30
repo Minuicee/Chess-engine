@@ -1,3 +1,5 @@
+Hi, if you want to share your projects and progresses with me, you are welcome to join my small discord server:
+"https://discord.gg/uvDshWSmjs"  
 
 # AI specs
 
