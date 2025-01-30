@@ -3,6 +3,7 @@ Hi, if you want to share your projects and progresses with me, you are welcome t
 
 # AI specs
 
+    -estimated elo of 1300-1500
     -uses multithreading
     -uses a database (pgn format)
 
